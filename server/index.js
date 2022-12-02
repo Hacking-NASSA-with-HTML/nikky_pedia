@@ -64,6 +64,7 @@ mongoose.connect(process.env.MONGO_URL, {
 }).then(() => {
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`))
 
+    /* Control point fully working backend */
     /* add data one time */
     // User.insertMany(users)
     // Post.insertMany(posts)
