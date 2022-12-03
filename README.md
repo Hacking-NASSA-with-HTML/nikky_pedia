@@ -1,4 +1,4 @@
-# nikky pedia
+# Nikky-pedia
 React app about Nicole Kidman.
 <br>
 ---
