@@ -1,6 +1,7 @@
 # Nikky-pedia
 React app about Nicole Kidman.
 <br>
+## currently in development mode
 ---
 front-end kit:
 ```
