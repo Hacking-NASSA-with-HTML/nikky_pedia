@@ -7,7 +7,8 @@ React app about Nicole Kidman.
  https://github.com/Hacking-NASSA-with-HTML/nikky_pedia_1_01
   app about Nicole Kidman. Currently BACK-END
  https://github.com/Hacking-NASSA-with-HTML/backend_nikky_pedia_1_01 
-   deployed on Railway https://nikky-pedia-backend.up.railway.app (needs activation, ask me to turn it on if you would like to see the app) FRONT-END deployed on https://nikky-pedia.netlify.app May be turned off because Railway limits
+   deployed on Railway https://nikky-pedia-backend.up.railway.app (needs activation, ask me to turn it on if you would like to see the app) FRONT-END deployed on https://nikky-pedia.netlify.app May be turned off because Railway limits.
+<br>
 ---
 front-end kit:
 ```
