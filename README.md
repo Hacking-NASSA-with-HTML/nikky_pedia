@@ -17,6 +17,5 @@ React app about Nicole Kidman.
 npm i react-redux @reduxjs/toolkit redux-persist react-dropzone dotenv formik yup react-router-dom@6 @mui/material @emotion/react @emotion/styled @mui/icons-material
 ```
 
-<br>
 ---
 Final Control Point added of fully working app locally, both backend and frontend.
