@@ -20,6 +20,10 @@ npm i react-redux @reduxjs/toolkit redux-persist react-dropzone dotenv formik yu
 ---
 Final Control Point added of fully working app locally, both backend and frontend.
 
-![](https://github.com/Hacking-NASSA-with-HTML/Array_iteration_cheatsheet/blob/main/star.gif)
+![](https://github.com/Hacking-NASSA-with-HTML/nikky_pedia/blob/main/Nikky-pedia.gif)
+
+![](https://github.com/Hacking-NASSA-with-HTML/nikky_pedia/blob/main/Nikky-pediA.jpg)
+
+![](https://github.com/Hacking-NASSA-with-HTML/nikky_pedia/blob/main/Nikky-pediA_mobile.jpg)
 
 ![](https://github.com/Hacking-NASSA-with-HTML/Array_iteration_cheatsheet/blob/main/star.gif)
