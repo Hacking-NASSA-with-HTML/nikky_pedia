@@ -14,6 +14,7 @@ import postRoutes from "./routes/posts.js"
 import { register } from "./controllers/auth.js";
 import { createPost } from "./controllers/posts.js";
 import { verifyToken } from "./middleware/auth.js";
+import { keepAlive } from "./keepAlive.js";
 import User from "./models/User.js"
 import Post from "./models/Post.js"
 import { users, posts } from "./data/index.js";
@@ -37,6 +38,9 @@ app.use("/assets", express.static(path.join(__dirname, "public/assets")))
 //     res.send('This Magic Thing is working!!!');
 // })
 app.use("/", express.static(path.join(__dirname, "public")))
+
+// keep app alive
+app.get("/keep-alive", keepAlive)
 
 
 /* File Storage */
