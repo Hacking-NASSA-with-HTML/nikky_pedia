@@ -32,6 +32,7 @@ app.use(bodyParser.json({ limit: "30mb", extended: true }))
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }))
 app.use(cors())
 app.use("/assets", express.static(path.join(__dirname, "public/assets")))
+app.use("/", express.static(path.join(__dirname, "public/index.html")))
 
 
 /* File Storage */
@@ -49,6 +50,11 @@ const upload = multer({ storage })
 /* Routes with files  */
 app.post("/auth/register", upload.single("picture"), register)
 app.post("/posts", verifyToken, upload.single("picture"), createPost)
+
+/* Get rid of "cannot get /" error */
+app.get('/', (req, res) => {
+    res.send('This Magic Thing is working!!!');
+})
 
 /* Routes */
 app.use("/auth", authRoutes)
