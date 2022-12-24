@@ -32,6 +32,11 @@ app.use(bodyParser.json({ limit: "30mb", extended: true }))
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }))
 app.use(cors())
 app.use("/assets", express.static(path.join(__dirname, "public/assets")))
+/* Get rid of "cannot get /" error */
+// app.get('/', (req, res) => {
+//     res.send('This Magic Thing is working!!!');
+// })
+app.use("/", express.static(path.join(__dirname, "public")))
 
 
 /* File Storage */
@@ -50,11 +55,6 @@ const upload = multer({ storage })
 app.post("/auth/register", upload.single("picture"), register)
 app.post("/posts", verifyToken, upload.single("picture"), createPost)
 
-/* Get rid of "cannot get /" error */
-// app.get('/', (req, res) => {
-//     res.send('This Magic Thing is working!!!');
-// })
-app.use("/", express.static(path.join(__dirname, "public")))
 
 /* Routes */
 app.use("/auth", authRoutes)
@@ -68,7 +68,7 @@ mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => {
-    app.listen(PORT, () => console.log(`Server Port: ${PORT}`))
+    app.listen(PORT, () => console.log(`Server runs on Port: ${PORT}`))
 
     /* Control point fully working backend */
     /* add data one time */
